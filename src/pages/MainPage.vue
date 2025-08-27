@@ -49,8 +49,8 @@ export default {
   },
 
   mounted() {
-    this.getRandoms();
-    // this.template();
+    // this.getRandoms();
+    this.template();
   },
 
   methods: {

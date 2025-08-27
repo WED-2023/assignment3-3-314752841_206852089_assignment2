@@ -51,7 +51,7 @@ export default {
       })
 
       if (response.status === 200) {
-        store.login(response.session_id);
+        store.login(response.data.username);
         window.location.href = "/";
       }
       else {

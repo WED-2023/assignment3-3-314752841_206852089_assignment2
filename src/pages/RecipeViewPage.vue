@@ -103,23 +103,23 @@
       }
     },
     methods: {
-      async saveToFavorites() {   // Fix this
-        const res = await this.axios({
-          method: "POST",
-          url: this.$root.store.server_domain + "/user/favorites",
-          validateStatus: () => true,
-          data: {
-            recipeId: this.$route.params.recipeId,
-            user_id: this.$root.store.username,
-          }
-        })
+      // async saveToFavorites() {   // Fix this
+      //   const res = await this.axios({
+      //     method: "POST",
+      //     url: this.$root.store.server_domain + "/user/favorites",
+      //     validateStatus: () => true,
+      //     data: {
+      //       recipeId: this.$route.params.recipeId,
+      //       user_id: this.$root.store.username,
+      //     }
+      //   })
 
-        if (res.status === 200) {
-          alert("Recipe saved to favorites!");
-        } else {
-          alert("Failed to save recipe to favorites.\n" + res.status + ": " + res.data.message);
-        }
-      }
+      //   if (res.status === 200) {
+      //     alert("Recipe saved to favorites!");
+      //   } else {
+      //     alert("Failed to save recipe to favorites.\n" + res.status + ": " + res.data.message);
+      //   }
+      // }
     }
   };
 </script>
