@@ -14,6 +14,7 @@ const store = reactive({
     console.log("logout");
     localStorage.removeItem('username');
     this.username = undefined;
+    this.session_id = undefined;
   }
 });
 
